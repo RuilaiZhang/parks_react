@@ -92,7 +92,7 @@ const stateReducer = (state, action) => {
       sessionStorage.removeItem("jwt", action.data);
       return {
         ...state,
-        jwt: action.data,
+        jwt: null,
       };
     }
     default:
